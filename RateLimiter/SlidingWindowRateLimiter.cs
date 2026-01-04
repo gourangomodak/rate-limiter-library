@@ -51,7 +51,8 @@ public class SlidingWindowRateLimiter : IRateLimiter
         lock (log.Lock)
         {
             // Remove expired timestamps from the sliding window
-            log.Timestamps.RemoveAll(timestamp => timestamp <= windowStart);
+            // Use strict comparison to allow requests exactly at window boundary
+            log.Timestamps.RemoveAll(timestamp => timestamp < windowStart);
 
             // Check if we can accept this request
             if (log.Timestamps.Count < _limit)
