@@ -1,0 +1,77 @@
+# .NET Build Outputs
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+artifacts/
+
+# NuGet Package Management
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# Visual Studio Cache/Options
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Test Results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+*.runsettings
+
+# Visual Studio Code Coverage
+*.codecoverage
+.msCoverageSourceRootsMapping*
+CoverletSourceRootsMapping*
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# Build Tool Outputs
+*.log
+*.wrn
+*.err
+
+# User-Specific Settings
+appsettings.Development.json
+appsettings.Local.json
+launchSettings.json
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+*.swp
+*~
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Backup Files
+*.bak
+*.orig
